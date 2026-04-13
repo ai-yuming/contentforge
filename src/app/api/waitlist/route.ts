@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
     // Send confirmation email to the subscriber
     await resend.emails.send({
-      from: "ContentForge <waitlist@contentforge.ai>",
+      from: "ContentForge <noreply@enalchemy.com>",
       to: email,
       subject: "You're on the ContentForge waitlist!",
       html: `
