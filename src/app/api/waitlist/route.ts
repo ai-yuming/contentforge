@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
     // Notify the founder about the new signup
     await resend.emails.send({
       from: "ContentForge Waitlist <waitlist@contentforge.ai>",
-      to: "martinyu609@gmail.com",
+      to: "martinyu@enalchemy.com",
       subject: `New waitlist signup: ${email}`,
       html: `<p>New ContentForge waitlist signup: <strong>${email}</strong></p>`,
     });
